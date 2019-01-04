@@ -197,7 +197,7 @@ export default function () {
   let newSlidesGrid;
 
   if (
-    rtl && wrongRTL && (params.effect === 'slide' || params.effect === 'coverflow')) {
+    rtl && wrongRTL && (params.effect === 'slide' || params.effect === 'coverflow' || params.effect === 'scale')) {
     $wrapperEl.css({ width: `${swiper.virtualSize + params.spaceBetween}px` });
   }
   if (!Support.flexbox || params.setWrapperSize) {
